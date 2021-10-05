@@ -3,6 +3,19 @@
     padding: 0;
 }
 
+
+
+.sites{
+    display: inline-block;
+
+}
+
+#nome{
+    justify-content: center;
+    padding: 0.2em;
+    border: #59429d;
+}
+
 #titulo{
     font-family: sans-serif;
     color: #380B61;
@@ -47,8 +60,52 @@ fieldset.group .campo{
     margin-right: 1em;
 }
 
-.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea, .campo website{
+.group:before, .group:after{
+    display: table;
+}
+
+.group:after{
+    clear: both;
+}
+
+
+.campo input[type="text"], .campo input[type="email"],.campo input[type="website"] , .campo select, .campo textarea, .campo website{
     padding: 0.2em;
     border: #59429d;
-    box-shadow: 2px 2px 2px ;
+    box-shadow: 2px 2px 2px rgba(154,122,122,0.2);
+    display: block;
+}
+
+.campo select option{
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    background-color: #e0e0f8;
+}
+
+.botao {
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.botao:hover{
+    background: #ccbbff;
+    box-shadow: insert 2px 2px 2px rgba(0,0,0,0,0.2);
+}
+
+#check{
+    display: inline-block;
 }

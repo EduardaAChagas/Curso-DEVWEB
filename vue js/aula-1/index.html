@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Vue Eduarda</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 </head>
 <body>
     <div id = "app">
-        <h1>Pagina da Dudis com Vue JS</h1>
-        <img v-bind:src="imagem" alt="">
+        <h1>{{ titulopagina}}</h1>
+        <img :src="imagem" alt="">
+        <button class="btn" :class="btnEnviar" :style="btnStyleEnviar">ENVIAR</button>
+        <button class="btn" :class="btnCancelar" :style="btnStyleCancelar">CANCELAR</button>
     </div>
     <script src="https://unpkg.com/vue"></script>
     <script>
@@ -17,8 +20,13 @@
             el: "#app",
             data: {
                 titulo: "Pagina Vue Eduarda",
+                titulopagina: "Pagina da dudis com Vue JS",
                 imagem: "https://www.plazahoteis.com.br/wp-content/uploads/2019/07/gatinho-filhote-plaza-hoteis-jul19.jpg",
-                alt: "Gatinhos fofinhos miau"
+                alt: "Gatinhos fofinhos miau",
+                btnCancelar: 'btn-danger',
+                btnEnviar: 'btn-primary',
+                btnStyleEnviar: {'font-size': '15px'},
+                btnStyleCancelar: 'font-size 15px'
             }
         });
     </script>

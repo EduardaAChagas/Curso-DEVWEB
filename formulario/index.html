@@ -1,86 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Formulário Dudi</title>
-</head>
-<body>
-    <fieldset class="group">
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <title>Formulário da Dudi</title>
+        </head>
+    <body>
         <div>
             <h1 id="titulo">Cadastro de DEVs</h1>
             <p id="subtitulo"><h4>Complete com suas informações para realizar o cadastro.</h4></p>
         </div>
-    
-        <div>
-            <label for="nome">Nome</label>
-            <input type="text" name="name" id="name" required>
-        </div>
-    
-        <div>
-            <label for="nome">Sobrenome</label>
-            <input type="text" name="sobrenome" id="sobrenome" required>
-        </div>
-        <div>
-            <label class="campo" for="nome">Email</label>
-            <input type="email" name="email" id="email" required>
-        </div>
-        <div>
-            <label class="campo" for="nome">GitHub</label>
-            <input type="website" name="website" id="website">
-        </div>
-        <div>
-            <label class="campo" for="nome">Portfólio</label>
-            <input type="website" name="portfolio" id="portfolio">
-        </div>
-    </fieldset>
 
-    <fieldset class="group">
-        <div>
-            <label class="campo" for="nome"><h4>Qual sua preferência?</h4></label>
-            <label>
-                <input type="radio" value="frontend" name="posicao">Front End<br>
-                <input type="radio" value="backend" name="posicao">Back End<br>
-                <input type="radio" value="fullstack" name="posicao">fullstack<br>
-                <input type="radio" value="mobile" name="posicao">Mobile<br>
-            </label>
-        </div>
-    </fieldset>
-    <fieldset class="group">
-        <label for="nivel">
-            <h4>Qual seu nível de experiência?</h4>
-        </label>
-        <select class="campo" id="nivel">
-            <option selected disable value>selecione</option>
-            <option>Estagiário</option>
-            <option>Júnior</option>
-            <option>Pleno</option>
-            <option>Sênior</option>
-        </select>
-    </fieldset>
-    <fieldset class="group">
-        <label for="nome"><h4>Selecione as Tecnologias que você usa:</h4></label>
-        <label>
-            <input type="checkbox" value="vuejs" name="tecnologia">Vue JS<br>
-            <input type="checkbox" value="reactjs" name="tecnologia">React JS<br>
-            <input type="checkbox" value="angular" name="tecnologia">Angular<br>
-            <input type="checkbox" value="docker" name="tecnologia">Docker<br>
-            <input type="checkbox" value="springboot" name="tecnologia">Spring Boot<br>
-            <input type="checkbox" value="django" name="tecnologia">Django<br>
-            <input type="checkbox" value="sass" name="tecnologia">Sass<br>
-            <input type="checkbox" value="reactnative" name="tecnologia">React Native<br>
-        </label>
-    </fieldset>
-    <div>
-        <br>
-        <label for="nome">Conte um pouco sobre a sua experiência</label>
-        <div>
-            <textarea class="campo" row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
-        </div>
-    </div>
-    <button type="submit" class="botao">Enviar</button>
+        <form>
+            <fieldset class="group">
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="name" id="nome" required>
 
-</body>
+                    <label for="nome"><strong>Sobrenome</strong></label> 
+                    <input type="text" name="sobrenome" id="sobrenome" required><br>
+                </div>
+            </fieldset>
+
+            <div class="sites">
+                <div class="campo">
+                    <label for="nome">Email</label>
+                    <input type="email" name="email" id="email" required><br>
+                </div>
+                <div class="campo">
+                    <label for="nome">GitHub</label>
+                    <input type="website" name="website" id="website"><br>
+                </div>
+                <div class="campo">
+                    <label for="nome">Portfólio</label>
+                    <input type="website" name="portfolio" id="portfolio"><br>
+                </div>
+            </div>
+
+
+            <fieldset class="group">
+                <div>
+                    <label class="campo" for="nome"><h4>Qual sua preferência?</h4></label>
+                    <label>
+                        <input type="radio" value="frontend" name="posicao">Front End<br>
+                        <input type="radio" value="backend" name="posicao">Back End<br>
+                        <input type="radio" value="fullstack" name="posicao">fullstack<br>
+                        <input type="radio" value="mobile" name="posicao">Mobile<br>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="group">
+                <label for="nivel">
+                    <h4>Qual seu nível de experiência?</h4>
+                </label>
+                <select class="campo" id="nivel">
+                    <option selected disable value>selecione</option>
+                    <option>Estagiário</option>
+                    <option>Júnior</option>
+                    <option>Pleno</option>
+                    <option>Sênior</option>
+                </select>
+            </fieldset>
+            <fieldset class="group">
+                <div id="check">
+                    <label for="nome"><h4>Selecione as Tecnologias que você usa:</h4></label>
+                    <label>
+                        <input type="checkbox" value="vuejs" name="tecnologia">Vue JS<br>
+                        <input type="checkbox" value="reactjs" name="tecnologia">React JS<br>
+                        <input type="checkbox" value="angular" name="tecnologia">Angular<br>
+                        <input type="checkbox" value="docker" name="tecnologia">Docker<br>
+                        <input type="checkbox" value="springboot" name="tecnologia">Spring Boot<br>
+                        <input type="checkbox" value="django" name="tecnologia">Django<br>
+                        <input type="checkbox" value="sass" name="tecnologia">Sass<br>
+                        <input type="checkbox" value="reactnative" name="tecnologia">React Native<br>
+                    </label>
+                </div>
+            </fieldset>
+            <div>
+                <br>
+                <label for="nome">Conte um pouco sobre a sua experiência</label>
+                <div>
+                    <textarea class="campo" row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="botao">Enviar</button>
+        </form>
+    </body>
 </html>
