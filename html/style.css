@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+img{
+    width:250px;
+    height: 400px;
+}
+
+.sobre{
+    font-family: Comfortaa;
+    width: 320px;
+    height: 163px;
+    background-color: #82BBC2;
+    border: 2px solid #292E40;
+    margin: 70px;
+    box-shadow: 10px 10px #292E40;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 10px;
+
+}
+div h1{
+    color: #292E40;
+    text-shadow: 0.06em 0.04em #ffffff;
+}
+div h4{
+    color: #ffffff;
+    text-shadow: 0.06em 0.06em #292E40;
+}
+
+body{
+    margin: 0;
+    background: #82BBC2 url("../img/background.jpg") no-repeat;
+}
+
+.curriculo{
+    width: 50px;
+    height: 100px;
+    background-color: #CD6B97;
+    font-family: Comfortaa;
+    display: inline;
+    font-size: 16px;
+    border: 20px solid #CD6B97;
+    margin: 10px;
+    box-shadow: 5px 5px #BF4A67;
+    margin-left: 10px;
+}
+
+.curriculo a{ 
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.curriculo:hover{
+    cursor: pointer;
+}
+
+.header{
+    background-color: #82BBC2;
+    margin: 0;
+    padding: 20px;
+    display: block;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.menu-itens{
+    font-family: Comfortaa;
+    text-decoration: none;
+    margin: 10px;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.menu-itens:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
